@@ -1,0 +1,10 @@
+<div class="pie-chart-container">
+    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" class="severities-chart">
+    </highcharts-chart>
+</div>
+<div class="severities-legend">
+    <div *ngFor="let severity of model.data | keyvalue">
+        <div>{{(severity.key | seperateBySnakeOrCamelCase).toUpperCase()}}</div>
+        <div class="font-number">{{severity.value}}</div>
+    </div>
+</div>

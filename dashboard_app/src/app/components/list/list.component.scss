@@ -1,0 +1,19 @@
+.list-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:100%;
+
+    .list-item {
+        flex: 1 0 45%;
+        align-self: flex-end;
+
+        .list-item-value {
+            max-width: 77px;
+
+            * {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

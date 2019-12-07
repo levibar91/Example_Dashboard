@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$app-background-color: #264C6E;
+$card-header-color: #243A4C;
+$card-body-color: #254462;
+
+$low-risk-color: #419FC3;
+$medium-risk-color: #DF9E26;
+$high-risk-color: #C33D3E;
+
+* {
+    color: #E3E5E7;
+    font-family: 'Open Sans';
+}
+
+@mixin font-little-header {
+    font-size: 12px;
+}
+
+@mixin font-little-body {
+    font-size: 11px;
+}
+
+@mixin font-number {
+    font-size: 16px;
+}
+
+.font-little-header {
+    @include font-little-header();
+}
+
+.font-little-body {
+    @include font-little-body();
+}
+
+.font-number {
+    @include font-number();
+}
+
+mat-progress-bar .mat-progress-bar-buffer {
+    background: #203545;
+}
+
+mat-progress-bar .mat-progress-bar-fill::after {
+    background-color: #81A5C3;
+}   

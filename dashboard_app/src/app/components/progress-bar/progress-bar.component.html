@@ -1,0 +1,6 @@
+<div class="progress" [style.background-color]="backgroundColor" [style.height.px]="height">
+    <div class="progress-bar-whole" role="progressbar" [ngStyle]="{'background': getGradient()}" [style.height.px]="height">
+    </div>
+    <div class="hide-part-progress-bar" role="progressbar" [style.background-color]="backgroundColor" [style.width.%]="hideValue" [style.height.px]="height">
+    </div>
+</div>

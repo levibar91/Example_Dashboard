@@ -1,0 +1,16 @@
+.progress {
+    position: relative;
+
+    .progress-bar-whole {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
+
+    .hide-part-progress-bar {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

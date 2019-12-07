@@ -1,0 +1,11 @@
+
+<div class="source-types-card">
+    <div *ngFor="let item of model.data | keyvalue">
+        <span>{{(item.key | seperateBySnakeOrCamelCase).toUpperCase()}}</span>
+        <div class="source-type-progress">
+            <!-- <mat-progress-bar [mode]="Determinate" [value]="item.value" [color]="Primary"></mat-progress-bar> -->
+            <progress-bar class="progress-bar" [height]="5" [value]="item.value" [colors]="['#81A5C3']" backgroundColor="#203545"></progress-bar>
+            <span class="progress-bar-precentage">{{item.value}}</span>
+        </div>
+    </div>
+</div>

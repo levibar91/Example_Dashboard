@@ -1,0 +1,25 @@
+@import '../../../../styles.scss';
+
+.card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-header {
+        @include font-little-header();
+        background-color: $card-header-color;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .card-body {
+        @include font-little-body();
+        background-color: $card-body-color;
+        height: 217px;
+    }
+}

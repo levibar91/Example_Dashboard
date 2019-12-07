@@ -1,0 +1,20 @@
+.source-types-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+
+    .source-type-progress {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .progress-bar-precentage {
+            margin-left: 25px;
+        }
+
+        .progress-bar {
+            width:100%;
+        }
+    }
+}

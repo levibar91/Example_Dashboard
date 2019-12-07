@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-header">
+        {{(cardModel.networkType | seperateBySnakeOrCamelCase).toUpperCase() + ' ' + description}} 
+    </div> 
+    <div class="card-body">
+        <ng-template card-host></ng-template>
+    </div>
+</div>

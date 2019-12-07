@@ -1,0 +1,17 @@
+<div id="app-container">
+  <div *ngIf="!ready">
+    <div class="loader"></div>
+  </div>
+  <div *ngIf="ready" class="dashboard">
+    <div>
+      <span class="font-little-body risk-meter-value">SYSTEM RISK METER</span>
+      <div class="risk-meter-container">
+        <progress-bar [height]="5" [value]="riskMeterResponse.riskMeter" [colors]="['#419FC3', '#DF9E26', '#C33D3E']" backgroundColor="#243A4C" class="risk-meter"></progress-bar>
+        <span class="font-little-body risk-meter-value">{{riskMeterResponse.riskMeter}}</span>
+      </div>
+    </div>
+    <div *ngFor="let networkTypeThreats of riskMeterResponse.networkTypeThreats | keyvalue">
+      <network-type-threat [networkType]="networkTypeThreats.key" [networkThreats]="networkTypeThreats.value"></network-type-threat>
+    </div>
+  </div>
+</div>
